@@ -1,0 +1,120 @@
+<class-diagram version="1.0.7" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" corner="BOTTOM_RIGHT" language="java" name="ModuleLayer.ForumModule" project="ApplicationTemoin" 
+    file="/ApplicationTemoin/src/ModuleLayer/ForumModule.java" binary="false">    
+    <position height="-1" width="-1" x="738" y="440"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="ModuleLayer.GestionFichierModule" 
+    project="ApplicationTemoin" file="/ApplicationTemoin/src/ModuleLayer/GestionFichierModule.java" binary="false">    
+    <position height="-1" width="-1" x="319" y="425"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" corner="BOTTOM_RIGHT" language="java" name="ModuleLayer.GestionProfilModule" project="ApplicationTemoin" 
+    file="/ApplicationTemoin/src/ModuleLayer/GestionProfilModule.java" binary="false">    
+    <position height="-1" width="-1" x="1128" y="378"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="ModuleLayer.Module" project="ApplicationTemoin" 
+    file="/ApplicationTemoin/src/ModuleLayer/Module.java" binary="false">    
+    <position height="-1" width="-1" x="569" y="220"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <package id="5" language="java" name="ModuleLayer" project="ApplicationTemoin" 
+    file="/ApplicationTemoin/src/ModuleLayer" binary="false">    
+    <position height="-1" width="-1" x="82" y="31"/>  
+  </package>  
+  <class id="6" corner="BOTTOM_RIGHT" language="java" name="DAOLayer.DAOFactory" project="ApplicationTemoin" 
+    file="/ApplicationTemoin/src/DAOLayer/DAOFactory.java" binary="false">    
+    <position height="-1" width="-1" x="570" y="94"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" corner="BOTTOM_RIGHT" language="java" name="BaseLayer.Categorie" project="ApplicationTemoin" 
+    file="/ApplicationTemoin/src/BaseLayer/Categorie.java" binary="false">    
+    <position height="-1" width="-1" x="738" y="739"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="8" corner="BOTTOM_RIGHT" language="java" name="BaseLayer.Fichier" project="ApplicationTemoin" 
+    file="/ApplicationTemoin/src/BaseLayer/Fichier.java" binary="false">    
+    <position height="-1" width="-1" x="318" y="679"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="9" corner="BOTTOM_RIGHT" language="java" name="BaseLayer.Profil" project="ApplicationTemoin" 
+    file="/ApplicationTemoin/src/BaseLayer/Profil.java" binary="false">    
+    <position height="-1" width="-1" x="1127" y="638"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <association id="10">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="11" name="catalogueCategorie"/>      
+      <multiplicity id="12" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="13">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <generalization id="14">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <generalization id="15">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <association id="16">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="17" name="catalogueFichier"/>      
+      <multiplicity id="18" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="19">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="20" name="factory"/>      
+      <multiplicity id="21" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="22">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="23" name="catalogueProfil"/>      
+      <multiplicity id="24" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
